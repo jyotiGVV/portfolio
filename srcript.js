@@ -6,10 +6,12 @@ const progress = document.querySelector(".progress-bars-wrapper");
 const progressBarPercents = [97, 89, 65, 70, 80, 50, 90];
 
 window.addEventListener("scroll", () => {
-mainFn();
+  mainFn();
 });
 
-const mainFn = () =>{
+window.open("https://google.com");
+
+const mainFn = () => {
   if (window.pageYOffset >= Navbar.offsetTop) {
     Navbar.classList.add("sticky");
   } else {
@@ -26,13 +28,13 @@ const mainFn = () =>{
   });
 
   if (window.pageYOffset + window.innerHeight >= progress.offsetTop) {
-    document.querySelectorAll('.progress-percent').forEach((el, i) => {
+    document.querySelectorAll(".progress-percent").forEach((el, i) => {
       el.style.width = `${progressBarPercents[i]}%`;
       el.previousElementSibling.firstElementChild.textContent =
-      progressBarPercents[i];
+        progressBarPercents[i];
     });
-  } 
-}
+  }
+};
 mainFn();
 
 //window.addEventListener('resize',() => {
