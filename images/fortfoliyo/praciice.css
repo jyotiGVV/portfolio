@@ -1,0 +1,27 @@
+#outer
+{
+    background-color: yellow;
+    height: 300px;
+}
+
+#inner
+{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+.hi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 60px;
+    width: 50px;
+    background-color: white;
+    justify-content: space-evenly;
+    margin:15px ;
+}
